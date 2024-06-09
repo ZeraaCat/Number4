@@ -1,0 +1,3 @@
+screen unclickable_screen:
+    modal True
+    add Solid("#000000", xalign=0.5, yalign=0.5, width=renpy.config.screen_width, height=renpy.config.screen_height)
