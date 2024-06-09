@@ -1,6 +1,8 @@
 all the way at the end of the script 
 
- # ユーザーがクリックするまで待つ
-    pause
-    $ renpy.movie_cutscene("movies/video.webm",loops=3, stop_music=False)
+# ユーザーがクリックするまで待つ
+ pause
+    show screen unclickable_screen
+    $ renpy.movie_cutscene("movies/video.webm",loops=3, stop_music=False,)
+    hide screen unclickable_screen
     $ renpy.show_screen("main_menu")  
